@@ -233,6 +233,13 @@
                                         <layer>ejb</layer>
                                         <layer>web-clustering</layer>
                                     </layers>
+                                    <packaging-scripts>
+                                        <packaging-script>
+                                            <scripts>
+                                                <script>undertow-filter.cli</script>
+                                            </scripts>
+                                        </packaging-script>
+                                    </packaging-scripts>
                                     <filename>ROOT.ear</filename>
                                 </configuration>
                             </execution>

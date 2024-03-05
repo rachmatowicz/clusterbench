@@ -1,0 +1,6 @@
+# Add headers to Undertow to allow monitoring of request targets
+
+/subsystem=undertow/configuration=filter/response-header=node-name-header:add(header-name="JBoss-Node-Name", header-value=${jboss.node.name})
+/subsystem=undertow/server=default-server/host=default-host/filter-ref=node-name-header:add()
+
+
